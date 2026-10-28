@@ -65,7 +65,7 @@ a {
   position: absolute;
   z-index: 2;
   top: clamp(20px, calc((100svh - 518px) / 4 - 16px), 128px);
-  right: clamp(26px, 7.2vw, 112px);
+  right: max(clamp(26px, 7.2vw, 112px), calc(50vw - 616px));
   display: inline-flex;
   min-width: 68px;
   height: 36px;
@@ -123,12 +123,6 @@ a {
   padding: 16px 0 14px;
 }
 
-@media (min-width: 901px) {
-  .welcome {
-    transform: translateY(-42px);
-  }
-}
-
 .brand {
   display: inline-flex;
   max-width: 100%;
@@ -165,7 +159,7 @@ a {
 .welcome h1 {
   margin: 15px 0 12px;
   font-family: "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
-  font-size: clamp(40px, 4.8vw, 64px);
+  font-size: clamp(40px, 4.8vw, 60px);
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.06;
@@ -593,7 +587,7 @@ a {
   }
 
   .language-toggle {
-    right: max(26px, 7.2vw);
+    right: max(26px, 7.2vw, calc(50vw - 750px));
   }
 
   .layout,
@@ -614,7 +608,7 @@ a {
   }
 
   .language-toggle {
-    right: clamp(28px, 5vw, 60px);
+    right: max(clamp(28px, 5vw, 60px), calc(50vw - 616px));
   }
 
   .layout {
@@ -627,7 +621,7 @@ a {
   }
 
   .welcome h1 {
-    font-size: clamp(38px, 4.7vw, 52px);
+    font-size: clamp(38px, 4.5vw, 50px);
   }
 }
 
@@ -638,7 +632,7 @@ a {
   }
 
   .language-toggle {
-    right: clamp(22px, 5vw, 46px);
+    right: max(clamp(22px, 5vw, 46px), calc(50vw - 300px));
   }
 
   .layout {
@@ -662,7 +656,7 @@ a {
   }
 
   .welcome h1 {
-    font-size: clamp(38px, 6vw, 52px);
+    font-size: clamp(38px, 5.8vw, 50px);
   }
 
   .login-panel {
@@ -683,7 +677,7 @@ a {
 
   .language-toggle {
     top: 20px;
-    right: 22px;
+    right: max(22px, calc(50vw - 235px));
   }
 
   .login-page {
@@ -723,7 +717,7 @@ a {
 
   .welcome h1 {
     margin: 9px 0 7px;
-    font-size: clamp(32px, 8.4vw, 40px);
+    font-size: clamp(30px, 8vw, 38px);
     line-height: 1.07;
   }
 
@@ -780,7 +774,7 @@ a {
   }
 
   .language-toggle {
-    right: 16px;
+    right: max(16px, calc(50vw - 235px));
   }
 
   .form-options {
@@ -823,7 +817,7 @@ a {
 
   .welcome h1 {
     margin: 10px 0 8px;
-    font-size: clamp(38px, 4.4vw, 58px);
+    font-size: clamp(38px, 4.3vw, 54px);
   }
 
   .welcome-description {
