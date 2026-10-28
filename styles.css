@@ -123,6 +123,12 @@ a {
   padding: 16px 0 14px;
 }
 
+@media (min-width: 901px) {
+  .welcome {
+    transform: translateY(-42px);
+  }
+}
+
 .brand {
   display: inline-flex;
   max-width: 100%;
@@ -163,7 +169,7 @@ a {
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.06;
-  color: #ffe0b2;
+  color: #c1a5a6;
   text-shadow: 0 3px 28px rgb(0 0 0 / 18%);
 }
 
@@ -172,6 +178,7 @@ a {
   margin: 0;
   color: rgb(255 255 255 / 83%);
   font-size: 15px;
+  font-weight: 600;
   line-height: 1.7;
   text-shadow: 0 2px 15px rgb(0 0 0 / 24%);
 }
