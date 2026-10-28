@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#201a20" />
+    <meta
+      id="page-description"
+      name="description"
+      content="Geleceğe açılan kapınız."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://akaanozcan.github.io/demo-site/" />
+    <meta id="og-title" property="og:title" content="Ali Eminoğlu" />
+    <meta id="og-description" property="og:description" content="Geleceğe açılan kapınız." />
+    <meta name="twitter:card" content="summary" />
+    <meta id="twitter-title" name="twitter:title" content="Ali Eminoğlu" />
+    <meta id="twitter-description" name="twitter:description" content="Geleceğe açılan kapınız." />
+    <link rel="canonical" href="https://akaanozcan.github.io/demo-site/" />
+    <title>Ali Eminoğlu</title>
+    <link rel="stylesheet" href="styles.css?v=20261028-2" />
+    <script src="script.js?v=20261028-2" defer></script>
+  </head>
+  <body>
+    <main class="login-page">
+      <div class="page-shade" aria-hidden="true"></div>
+      <button class="language-toggle" type="button" aria-label="Switch to English">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"></circle>
+          <path d="M3.5 12h17M12 3c2.3 2.5 3.4 5.5 3.4 9s-1.1 6.5-3.4 9c-2.3-2.5-3.4-5.5-3.4-9S9.7 5.5 12 3Z"></path>
+        </svg>
+        <span>EN</span>
+      </button>
+
+      <div class="layout">
+        <section class="welcome" aria-labelledby="welcome-title">
+          <a class="brand" href="#top" aria-label="Ali Eminoğlu ana sayfa" data-i18n-aria="brandHome">
+            <img
+              class="brand-logo"
+              src="assets/ali-eminoglu-logo-white.png?v=20261028-2"
+              alt="Ali Eminoğlu"
+            />
+          </a>
+
+          <div class="welcome-copy" id="top">
+            <p class="eyebrow" data-i18n="eyebrow">ALİ EMİNOĞLU DÜNYASINA HOŞ GELDİNİZ</p>
+            <h1 id="welcome-title"><span data-i18n="heroLine1">Geleceğe açılan</span><br /><span data-i18n="heroLine2">kapınız.</span></h1>
+            <p class="welcome-description" data-i18n="welcomeDescription">
+              Size özel deneyime kaldığınız yerden devam edin.
+            </p>
+          </div>
+
+        </section>
+
+        <section class="login-panel" aria-labelledby="login-title">
+          <div class="panel-heading">
+            <h2 id="login-title" data-i18n="loginTitle">Hoş geldiniz</h2>
+            <p data-i18n="loginDescription">Devam etmek için giriş yapın.</p>
+          </div>
+
+          <form class="login-form" id="login-form" novalidate>
+            <div class="field">
+            <label for="email" data-i18n="emailLabel">E-posta adresi</label>
+              <div class="input-wrap">
+                <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3.5" y="5.5" width="17" height="13" rx="2.5"></rect>
+                  <path d="m4.5 7 7.5 5.5L19.5 7"></path>
+                </svg>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="ornek@mail.com"
+                  data-i18n-placeholder="emailPlaceholder"
+                  autocomplete="email"
+                  inputmode="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="password" data-i18n="passwordLabel">Şifre</label>
+              <div class="input-wrap">
+                <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="4.5" y="10" width="15" height="10" rx="2.5"></rect>
+                  <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+                  <path d="M12 14v2"></path>
+                </svg>
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="Şifrenizi girin"
+                  data-i18n-placeholder="passwordPlaceholder"
+                  autocomplete="current-password"
+                  required
+                />
+                <button
+                  class="password-toggle"
+                  type="button"
+                  aria-label="Şifreyi göster"
+                  data-i18n-aria="passwordShow"
+                  aria-pressed="false"
+                  aria-controls="password"
+                >
+                  <svg class="eye-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z"></path>
+                    <circle cx="12" cy="12" r="2.5"></circle>
+                    <path class="eye-slash" d="m4.5 4.5 15 15"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-options">
+              <label class="remember-option" for="remember">
+                <input id="remember" name="remember" type="checkbox" />
+                <span class="custom-checkbox" aria-hidden="true">
+                  <svg viewBox="0 0 16 16"><path d="m3.5 8 3 3 6-6"></path></svg>
+                </span>
+                <span data-i18n="remember">Beni hatırla</span>
+              </label>
+              <a class="text-link" id="forgot-link" href="#forgot-password">
+                <span data-i18n="forgotPassword">Şifremi unuttum</span>
+              </a>
+            </div>
+
+            <button class="submit-button" type="submit">
+              <span data-i18n="signIn">Giriş yap</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10h11M10 5l5 5-5 5"></path>
+              </svg>
+            </button>
+
+          </form>
+
+          <div class="panel-divider" aria-hidden="true"><span></span></div>
+          <div class="register-line">
+            <span data-i18n="noAccount">Henüz hesabınız yok mu?</span>
+            <button class="register-button" type="button" data-i18n="signUp">Kayıt ol</button>
+          </div>
+          <p class="security-note">
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M10 2.5 3.5 5v4.4c0 4.2 2.7 6.8 6.5 8.1 3.8-1.3 6.5-3.9 6.5-8.1V5L10 2.5Z"></path>
+              <path d="m7.5 10 1.7 1.7 3.4-3.4"></path>
+            </svg>
+            <span data-i18n="securityNote">Güvenli ve kolay erişim</span>
+          </p>
+        </section>
+      </div>
+
+      <footer class="page-footer">
+        <div class="footer-copy">
+          <span>© <span id="year"></span> Ali Eminoğlu</span>
+          <span class="footer-separator" aria-hidden="true">•</span>
+          <span data-i18n="footerTagline">Hayalinizdeki yaşam, bir adım uzağınızda.</span>
+        </div>
+        <nav class="social-links" aria-label="Sosyal medya hesapları" data-i18n-aria="socialAccounts">
+          <a href="https://www.instagram.com/alieminoglu.ae/" target="_blank" rel="noreferrer" aria-label="Instagram" data-i18n-aria="instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3.25" y="3.25" width="17.5" height="17.5" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle class="social-dot" cx="17.55" cy="6.55" r="1"></circle>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/alieminoglu-ae/" target="_blank" rel="noreferrer" aria-label="LinkedIn" data-i18n-aria="linkedin">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 9h3v10H5zM6.5 5.25a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5ZM11 9h2.9v1.4h.05A3.2 3.2 0 0 1 16.85 8.8C20 8.8 20.5 10.85 20.5 13.5V19h-3v-4.9c0-1.17-.02-2.68-1.63-2.68-1.63 0-1.87 1.27-1.87 2.6V19h-3z"></path>
+            </svg>
+          </a>
+        </nav>
+      </footer>
+    </main>
+  </body>
+</html>
