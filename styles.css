@@ -527,7 +527,7 @@ a {
   justify-content: space-between;
   margin: 27px auto 0;
   color: rgb(255 255 255 / 66%);
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .footer-copy {
@@ -588,12 +588,22 @@ a {
 
 @media (min-width: 1440px) {
   .login-page {
-    padding-right: max(7.2vw, calc((100vw - 1232px) / 2));
-    padding-left: max(7.2vw, calc((100vw - 1232px) / 2));
+    padding-right: max(26px, 7.2vw);
+    padding-left: max(26px, 7.2vw);
   }
 
   .language-toggle {
-    right: max(7.2vw, calc((100vw - 1232px) / 2));
+    right: max(26px, 7.2vw);
+  }
+
+  .layout,
+  .page-footer {
+    width: min(100%, 86vw, 1500px);
+  }
+
+  .layout {
+    grid-template-columns: minmax(0, 1fr) minmax(370px, clamp(430px, 28vw, 520px));
+    gap: clamp(60px, 9vw, 170px);
   }
 }
 
@@ -742,7 +752,7 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 19px;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .footer-copy {
@@ -848,7 +858,7 @@ a {
 
   .page-footer {
     margin-top: 12px;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
